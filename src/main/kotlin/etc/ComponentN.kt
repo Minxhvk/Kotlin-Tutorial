@@ -12,8 +12,8 @@ data class Person(
 
 // Data Class는 아니지만, componentN 함수를 구현하는 방법
 class PersonNoDataClass(
-    val name: String,
-    val age: Int
+    var name: String,
+    var age: Int
 ) {
     operator fun component1(): String {
         return this.name
